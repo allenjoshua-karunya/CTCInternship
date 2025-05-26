@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Personal Profile</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      color: #333;
+      margin: 0;
+      padding: 20px;
+      background-color: #eaf2f8;
+      font-size: 16px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+    }
+
+    h1 {
+      color: #2c3e50;
+      margin-bottom: 10px;
+      font-size: 28px;
+    }
+
+    h2 {
+      color: #34495e;
+      margin-top: 30px;
+      margin-bottom: 10px;
+      font-size: 22px;
+    }
+
+    img {
+      display: block;
+      margin-bottom: 15px;
+      border-radius: 100px;
+    }
+
+    p {
+      line-height: 1.5;
+      margin-bottom: 15px;
+    }
+
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    a {
+      color: #2980b9;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .section {
+      background-color: #fff;
+      padding: 15px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+    }
+
+    form input[type="text"],
+    form input[type="email"],
+    form textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 4px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-family: inherit;
+    }
+
+    form input[type="submit"] {
+      background-color: #2980b9;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    form input[type="submit"]:hover {
+      background-color: #1f5f8b;
+    }
+
+    form p {
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Allen Joshua R</h1>
+
+    <!-- Photo -->
+    <img src="your-photo.jpg" alt="Your Name" width="200" />
+
+    <!-- Bio -->
+    <p>I am a passionate Computer Science Engineering student with hands-on experience in responsive web development and a good foundation in computer networking. 
+        I’m seeking opportunities to apply and expand my skills in dynamic, real-world projects
+        - especially in web technologies and network-driven applications while contributing meaningfully to innovative development teams.</p>
+
+    <!-- Contact Info -->
+    <div class="section">
+      <h2>Contact Info</h2>
+      <p>Email: <a href="mailto:allenjoshua@karunya.edu.in">allenjoshua@karunya.edu.in</a></p>
+      <p>Phone: +91 93427 08886</p>
+    </div>
+
+    <!-- Social Media Links -->
+    <div class="section">
+      <h2>Find me on</h2>
+      <ul>
+        <li><a href="http://www.linkedin.com/in/aj-m5/" target="_blank">LinkedIn</a></li>
+        <li><a href="https://github.com/allenjoshua-karunya" target="_blank">GitHub</a></li>
+      </ul>
+    </div>
+
+    <!-- Skills -->
+    <div class="section">
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML & CSS</li>
+        <li>JavaScript (Basic)</li>
+        <li>Git & GitHub</li>
+        <li>Java & Python</li>
+      </ul>
+    </div>
+
+    <!-- Education -->
+    <div class="section">
+      <h2>Education</h2>
+      <p>Bachelor of Technology in Computer Science</p>
+      <p>Karunya University — 2023–2027</p>
+    </div>
+
+    <!-- Projects -->
+    <div class="section">
+      <h2>Projects</h2>
+      <ul>
+        <li><strong>Portfolio Website</strong> — A simple portfolio using only HTML/CSS</li>
+        <li><strong>App</strong> — Designed a student-facing web app to help colleges avoid exam conflicts with internal exams and competitive exams. 
+        Emphasized usability, clean UI, and mobile-first design</li>
+      </ul>
+    </div>
+
+    <!-- Certifications -->
+    <div class="section">
+      <h2>Certifications</h2>
+      <p>CCNA – Routing, Switching and Wireless communications by Cisco </p>
+      <p>Operating Systems basic by Cisco </p>
+      <p>Java Fundamentals by Infosys 
+      <p>IoT 101 by Infosys</p>
+    </div>
+
+    <!-- Project Inquiry Section -->
+    <div class="section">
+      <h2>Project Inquiry</h2>
+      <p>Have a project in mind? Let me know the details below.</p>
+      <form id="inquiry-form">
+        <p>
+          <label for="name">Your Name:</label><br />
+          <input type="text" id="name" name="name" required />
+        </p>
+        <p>
+          <label for="email">Your Email:</label><br />
+          <input type="email" id="email" name="email" required />
+        </p>
+        <p>
+          <label for="project">Project Type:</label><br />
+          <input type="text" id="project" name="project" placeholder="e.g. Website, Logo, App..." required />
+        </p>
+        <p>
+          <label for="details">Project Details:</label><br />
+          <textarea id="details" name="details" rows="4" required></textarea>
+        </p>
+        <p>
+          <input type="submit" value="Send Inquiry" />
+        </p>
+      </form>
+    </div>
+
+    <script>
+      const form = document.getElementById("inquiry-form");
+
+      form.addEventListener("submit", function (e) {
+        e.preventDefault(); // Stop actual submission
+        alert("Thanks! Your project inquiry was received.");
+        form.reset();
+        });
+    </script>
+
+  </div>
+</body>
+</html>
