@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Allen Joshua R - Portfolio</title>
+  <style>
+    :root {
+      --primary: #2980b9;
+      --background: #eaf2f8;
+      --white: #ffffff;
+      --dark: #2c3e50;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: var(--background);
+      color: #333;
+    }
+
+    header {
+      background-color: var(--primary);
+      color: white;
+      padding: 15px 20px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    nav h1 {
+      font-size: 24px;
+      margin: 0;
+    }
+
+    nav ul {
+      display: flex;
+      gap: 15px;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px 20px;
+      background-color: var(--white);
+    }
+
+    .hero img {
+      border-radius: 100px;
+      width: 150px;
+      height: 150px;
+      margin-bottom: 15px;
+    }
+
+    .hero-text {
+      max-width: 600px;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .section {
+      background-color: var(--white);
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    form input[type="submit"] {
+      background-color: var(--primary);
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    footer {
+      background-color: var(--dark);
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .features-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <h1>Allen Joshua R</h1>
+      <ul>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#form">Inquiry</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <img src="your-photo.jpg" alt="Allen Joshua R">
+      <h2>Hello, I'm Allen</h2>
+      <p>A Computer Science student passionate about responsive design, web technologies, and real-world applications.</p>
+    </div>
+  </section>
+
+  <div class="container">
+    <!-- Features Section -->
+    <section class="section" id="features">
+      <h2>Skills & Certifications</h2>
+      <div class="features-grid">
+        <div>
+          <h3>Skills</h3>
+          <ul>
+            <li>HTML & CSS</li>
+            <li>JavaScript (Basic)</li>
+            <li>Git & GitHub</li>
+            <li>Java & Python</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Certifications</h3>
+          <ul>
+            <li>CCNA – Cisco</li>
+            <li>Operating Systems – Cisco</li>
+            <li>Java Fundamentals – Infosys</li>
+            <li>IoT 101 – Infosys</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section" id="projects">
+      <h2>Projects</h2>
+      <ul>
+        <li><strong>Portfolio Website</strong> — A simple portfolio using only HTML/CSS</li>
+        <li><strong>Exam Planner App</strong> — Helped avoid conflicts between university exams and competitive exams</li>
+      </ul>
+    </section>
+
+    <!-- Contact Info -->
+    <section class="section" id="contact">
+      <h2>Contact Info</h2>
+      <p>Email: <a href="mailto:allenjoshua@karunya.edu.in">allenjoshua@karunya.edu.in</a></p>
+      <p>Phone: +91 93427 08886</p>
+      <p>LinkedIn: <a href="http://www.linkedin.com/in/aj-m5/" target="_blank">aj-m5</a></p>
+      <p>GitHub: <a href="https://github.com/allenjoshua-karunya" target="_blank">allenjoshua-karunya</a></p>
+    </section>
+
+    <!-- Inquiry Form -->
+    <section class="section" id="form">
+      <h2>Project Inquiry</h2>
+      <form id="inquiry-form">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <input type="text" name="project" placeholder="Project Type (e.g. Website)" required />
+        <textarea name="details" rows="4" placeholder="Project Details..." required></textarea>
+        <input type="submit" value="Send Inquiry" />
+      </form>
+    </section>
+  </div>
+
+  <footer>
+    <p>© 2025 Allen Joshua R | All rights reserved</p>
+  </footer>
+
+  <script>
+    const form = document.getElementById("inquiry-form");
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      alert("Thanks! Your project inquiry was received.");
+      form.reset();
+    });
+  </script>
+
+</body>
+</html>
